@@ -1,0 +1,4 @@
+User-stories
+
+1. een gebruiker moet kunnen inloggen met gebruikersnaam en paswoord.  Bij goede login, moet de lijst van favorieten worden getoond.
+2. een gebruiker moet een favoriet kunnen bijvoegen

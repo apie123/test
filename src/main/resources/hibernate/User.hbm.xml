@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="be.kdg.reference.model.User" table="T_USER">
+        <id name="username" column="USERNAME"/>
+        <property name="password" column="PASSWORD"/>
+        <set name="favorites" cascade="all" lazy="true">
+            <key column="username" not-null="true"/>
+            <one-to-many class="be.kdg.reference.model.Favorite"/>
+        </set>
+    </class>
+</hibernate-mapping>
